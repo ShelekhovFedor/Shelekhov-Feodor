@@ -6,5 +6,6 @@ while p<=l:
     n+=1
     q+=3
     p*=q
-print(n)
+    if p>l:
+        print(q-3)
     
