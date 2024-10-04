@@ -1,0 +1,21 @@
+import math
+
+a = 0.1
+b = 1
+h = 0.1
+s = 0
+q = 1
+i = 0
+y = 0.1
+for x in range(1, 11, 1):
+    x = x / 10
+    y = math.cos(x)
+    print(y)
+    while abs(q) >= 0.0001:
+        s += ((-1) ** i) * (x ** (2 * i) / math.factorial(2 * i))
+        q = ((-1) ** i) * (x ** (2 * i) / math.factorial(2 * i))
+        i += 1
+    print(s)
+    s = 0
+    q = 1
+    i = 0
