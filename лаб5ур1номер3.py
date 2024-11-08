@@ -1,3 +1,4 @@
+import math
 v=10
 V=9
 a=1
@@ -13,4 +14,4 @@ if  v*T+(a*T**2)/2>V*T+(A*T**2)/2:
 else:
     print("За 4 час 2 проедет больше")
 o=(2*(v-V))/(a-A)
-print(o)
+print(math.fabs(o))
