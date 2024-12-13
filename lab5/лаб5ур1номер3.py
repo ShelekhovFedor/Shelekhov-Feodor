@@ -20,7 +20,7 @@ def resul(v, V, a, A, t, T):
         return "За 4 час 2 проедет больше"
 def resu(v, V, a, A):
     o=math.fabs((2*(v-V))/(a-A))
-    return o
+    return 'Догонит за ',o
 print(result(v, V, a, A, t, T))
 print(resul(v, V, a, A, t, T))
 print(resu(v, V, a, A))
