@@ -14,7 +14,8 @@ def task(q):
         else:
             i+=1
     return q
-print(task(q))
+for i in range(len(task(q))):
+    print(task(q)[i])
 
 
 
