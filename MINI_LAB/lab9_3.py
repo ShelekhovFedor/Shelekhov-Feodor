@@ -1,7 +1,6 @@
 #3. На основании результатов соревнований по прыжкам в длину
 # (фамилии и результаты трех попыток) составить итоговый протокол
 # соревнований, считая, что в зачет идет лучший результат.
-
 first=open('first_sportsmen.txt','r')
 second=open('second_sportsmen.txt','r')
 third=open('third_sportsmen.txt','r')
@@ -29,9 +28,21 @@ y=e[0]
 for i in range(len(e)):
     if e[i]>y:
         y=e[i]
-print('first_sportsmen:',r)
-print('second_sportsmen:',t)
-print('third_sportsmen:',y)
+j=[]
+j.append('first_sportsmen:')
+j.append(str(r))
+j.append('second_sportsmen:')
+j.append(str(t))
+j.append('third_sportsmen:')
+j.append(str(y))
+Results=open('Results.txt','w')
+print(j)
+for i in range(len(j)):
+    Results.write(j[i])
 first.close()
+Results=open('Results.txt','r')
 second.close()
 third.close()
+k=Results.read()
+print(k)
+Results.close()
