@@ -126,7 +126,7 @@ plt.plot(xxx,yyy,c='blue')
 plt.gca().set_aspect('equal')
 for i in range(3):
     plt.scatter(k[i][0],k[i][1],c='red')
-plt.show(
+plt.show()
 
 
 
