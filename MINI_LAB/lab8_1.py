@@ -3,18 +3,20 @@
 # (в долях от общего коли-
 #чества букв).
 
-q='Eh bien, mon prince. Gênes et Lucques ne sont plus que des apanages, des поместья, de la famille Buonaparte. Non, je vous préviens que si vous ne me dites pas que nous avons la guerre, si vous vous permettez encore de pallier toutes les infamies, toutes les atrocités de cet Antichrist (ma parole, jy crois)  je ne vous connais plus, vous nêtes plus mon ami, vous nêtes plus мой верный раб, comme vous dites. Ну, здравствуйте, здравствуйте. Je vois que je vous fais peur'
+print('Введите букву частоту которой хотите найти')
+letter=str(input())
+q='Где, как, когда всосала в себя из того русского воздуха, которым она дышала, — эта графинечка, воспитанная эмигранткой-француженкой, — этот дух, откуда взяла она эти приемы, которые давно бы должны были вытеснить? Но дух и приемы эти были те самые, неподражаемые, неизучаемые, русские, которых и ждал от нее дядюшка. Как только она стала, улыбнулась торжественно, гордо и хитро-весело, первый страх, который охватил было Николая и всех присутствующих, страх, что она не то сделает, прошел, и они уже любовались ею.'
 q=q.replace(' ','')
 q=q.replace('.','')
 q=q.replace(',','')
 q=q.replace('(','')
 q=q.replace(')','')
-w=' а, б, в, г, д, е, ё, ж, з, и, й, к, л, м, н, о, п, р, с, т, у, ф, х, ц, ч, ш, щ, ъ, ы, ь, э, ю, я'
-e=w.upper()
-r=0
-for i in range(len(w)):
-    r=r+q.count(w[i])
-for i in range(len(e)):
-    r=r+q.count(e[i])
+q=q.replace('-','')
+q=q.replace('—','')
+q=q.replace('-','')
+q=q.replace('?','')
+print(q)
+r=q.count(letter)
+r=r+q.count(letter.upper())
 t=r/len(q)
 print(t)
